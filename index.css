@@ -3,7 +3,7 @@
 /* --------------------------------------- */
 
 @font-face {
-  font-family: "Hk Grotesk";
+  font-family: "Aptos";
   font-style: normal;
   font-weight: 400;
   src: url("./fonts/HKGrotesk-Regular.woff") format("woff");
@@ -34,8 +34,8 @@
   --line-height-normal: 1.7;
   --line-height-small: 1.2;
 
-  --black: #000;
-  --pink: #ff3258;
+  --black: #0d0d0d;
+  --pink: #8b32ff;
   --white: #f0e9f2;
   --white-1: #e5e5e6da;
 
@@ -130,7 +130,7 @@ h3 {
 .heading-primary {
   line-height: 1;
   font-size: var(--font-size-huge);
-  font-weight: 400;
+  font-weight: 600;
 }
 
 @media (max-width: 900px) {
@@ -403,12 +403,13 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .header {
-  background: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.4)),
-    url("./images/header.jpg");
-  height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, 1), rgba(14, 14, 14, 0.4)),
+    url("./images/abstract_bg.jpg");
+  height: 100dvh;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
+  background-repeat: no-repeat;
   font-size: var(--font-size-normal);
 }
 
@@ -425,6 +426,59 @@ body:not(.user-is-tabbing) a:focus {
   font-size: var(--font-size-medium);
 }
 
+#parent {
+  height: 90dvh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: url("images/flux_trial_img.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: left;
+  background-clip: text;
+  -webkit-background-clip: text;
+  /* border: solid 1px red; */
+}
+
+.child {
+  /* height: 70vh; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  color: rgba(0, 0, 0, 0.2);
+  /* text-wrap: wrap; */
+}
+
+.child h3 {
+  /* max-width: 50vw; */
+  text-align: left;
+  /* font-size: 10vw; */
+  text-transform: uppercase;
+  font-size: 10rem;
+  font-weight: 900;
+  font-family: "Blackout Midnight V1";
+  margin: 0;
+  color: transparent;
+}
+
+.child h3 span {
+  font-size: 16rem;
+  line-height: 0.75;
+}
+
+.child button {
+  padding: 1rem;
+  border-radius: 1rem;
+  /* font-size: 2rem; */
+}
+
+.contact_links {
+  display: flex;
+  justify-content: left;
+}
+
 @media (max-width: 500px) {
   .header {
     text-align: center;
@@ -436,12 +490,12 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 /* --------------------------------------- */
-/* ----- Work ----- */
+/* ----- Projects ----- */
 /* --------------------------------------- */
 
 .work__box {
   display: flex;
-  align-items: center;
+  /* align-items: center; */
 }
 
 @media (max-width: 900px) {
@@ -467,7 +521,7 @@ body:not(.user-is-tabbing) a:focus {
 }
 
 .work__text {
-  flex: 0 0 30%;
+  flex: 0 0 50%;
 }
 
 .work__list {
@@ -478,8 +532,9 @@ body:not(.user-is-tabbing) a:focus {
 
 .work__code {
   display: block;
-  height: 3rem;
-  margin-left: var(--gutter-normal);
+  height: 6rem;
+  margin-top: var(--gutter-huge);
+  margin-right: var(--gutter-normal);
   transition: all 0.3s;
 }
 
@@ -500,33 +555,7 @@ body:not(.user-is-tabbing) a:focus {
 
 @media (max-width: 900px) {
   .work__code {
-    height: 4rem;
-  }
-}
-
-/* --------------------------------------- */
-/* ----- Clients ----- */
-/* --------------------------------------- */
-
-.client__logos {
-  display: flex;
-  justify-content: space-between;
-  filter: invert(100%) grayscale(100%) opacity(0.8);
-}
-
-.client__logo {
-  height: 6.5rem;
-  max-width: 18rem;
-}
-
-@media (max-width: 1240px) {
-  .client__logos {
-    overflow-x: scroll;
-    padding: var(--gutter-normal);
-  }
-
-  .client__logo:not(:last-of-type) {
-    margin-right: var(--gutter-medium);
+    height: 3rem;
   }
 }
 
@@ -562,12 +591,10 @@ body:not(.user-is-tabbing) a:focus {
   }
 }
 
-/* --------------------------------------- */
-/* ----- Contact ----- */
-/* --------------------------------------- */
-
-.contact__info {
-  max-width: var(--container-medium-width);
+@media (max-width: 500px) {
+  .footer {
+    padding: var(--gutter-medium) 0;
+  }
 }
 
 /* --------------------------------------- */
@@ -577,32 +604,6 @@ body:not(.user-is-tabbing) a:focus {
 .footer {
   text-align: center;
   padding: var(--gutter-medium) 0 var(--gutter-normal);
-}
-
-.footer__social-links {
-  display: flex;
-  justify-content: center;
-  padding: var(--gutter-normal) 0;
-  list-style: none;
-}
-
-.footer__social-link-item:not(:last-of-type) {
-  margin-right: var(--gutter-small);
-}
-
-.footer__social-image {
-  height: 4rem;
-}
-
-.footer__github-buttons {
-  display: flex;
-  justify-content: center;
-}
-
-.footer__github-buttons iframe {
-  height: 2.5rem;
-  width: 84px;
-  transform: translateY(3px);
 }
 
 @media (max-width: 500px) {
