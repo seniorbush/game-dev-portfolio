@@ -4,353 +4,87 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
+    <title>PM Applications</title>
 
-    <title>Philip Moodie</title>
-    <meta name="PM Apps" content="" />
-    <!-- <meta name="description" content="Junior Game Developer, Father of two & Sausage Roll Enthusiast." /> -->
-    <meta
-      name="keywords"
-      content="Philip Moodie, JavaScript, HTML, CSS, React, C#, Unity, SQL"
-    />
+    <!-- Fonts -->
     <link
       href="https://db.onlinewebfonts.com/c/b9afe60e42f08c79f5333c87ed334402?family=Blackout+Midnight+V1"
       rel="stylesheet"
     />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: #111;
+        color: #fff;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        flex-direction: column;
+        text-align: center;
+      }
+
+      h1 {
+        font-family: "Blackout Midnight V1", sans-serif;
+        font-size: 84px;
+        margin: 0;
+        letter-spacing: 2px;
+      }
+
+      h2 {
+        font-size: 24px;
+        font-weight: 300;
+        margin-top: 10px;
+        color: #ccc;
+      }
+
+      a {
+        margin-top: 20px;
+        color: #08fdd8;
+        font-size: 18px;
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .icon-link {
+        display: inline-flex;
+        align-items: center;
+        margin-top: 10px;
+        gap: 8px;
+        font-size: 16px;
+      }
+
+      .icon-link img {
+        width: 24px;
+        height: 24px;
+      }
+    </style>
   </head>
-
   <body>
-    <!-- ***** Header ***** -->
+    <h1>PM Applications</h1>
+    <h2>Coming soon</h2>
+    <a href="mailto:contact.pmapps@gmail.com">contact.pmapps@gmail.com</a>
 
-    <header class="header" role="banner" id="top">
-      <div class="row">
-        <!-- <nav class="nav" role="navigation">
-          <ul class="nav__items">
-            <li class="nav__item">
-              <a href="#about" class="nav__link">About</a>
-            </li>
-            <li class="nav__item">
-              <a href="#work" class="nav__link">Projects</a>
-            </li>
-            <li class="nav__item"></li>
-          </ul>
-        </nav> -->
-      </div>
-      <div class="header__text-box row">
-        <section id="parent">
-          <div class="child">
-            <h3><span>pm</span></h3>
-            <h3><span>applications</span></h3>
-            <h3>coming soon</h3>
-            <!-- <div class="contact_links"> -->
-              <a
-                href="https://github.com/seniorbush"
-                title="View Source Code"
-                target="_blank"
-                ><img src="./images/github.svg" class="work__code" alt="GitHub"
-              /></a>
-              <a
-                href="https://www.linkedin.com/in/pmoodie/"
-                title="View Source Code"
-                target="_blank"
-              >
-                <img
-                  src="./images/linkedin.svg"
-                  class="work__code"
-                  alt="linkedin"
-                />
-              </a>
-              
-                <img
-                  src="./images/unity-junior-programmer.png"
-                  class="work__code"
-                  alt="linkedin"
-                />
-              
-            </div>
-          </div>
-        </section>
-
-        <!-- <div class="header__text">
-          <h1 class="heading-primary">
-            <span>Philip Moodie</span>
-          </h1>
-          <p>Developer | Father | Gamer</p>
-        </div> -->
-      </div>
-    </header>
-
-    <main role="main">
-      <!-- ***** About ***** -->
-
-      <!-- <section class="about" id="about">
-        <div class="row">
-          <h2>About</h2>
-          <div class="about__content">
-            <div class="about__text">
-              <p>
-                <span>Hi, I'm Philip</span></br>  A software developer from Northern Ireland with a
-                genuine passion for technology and a life-long interest in game
-                development. The blend of design and technology have
-                always fascinated me, I thrive on learning and enjoy embracing new challenges as I'm
-                constantly seeking ways to improve my abilities in game
-                development and design.
-              </p>
-              <a href="https://drive.google.com/file/d/1NfQTCVj-0VezViUEXSEIEnhSxgEMKuDw/view?usp=sharing" class="btn">Download CV</a>
-            </div>
-
-            <div class="about__photo-container">
-              <img class="about__photo" src="./images/me.jpg" alt="" />
-            </div>
-          </div>
-        </div>
-      </section> -->
-
-      <!-- ***** Work ***** -->
-
-      <!-- <section class="work" id="work">
-        <div class="row">
-          <h2>Projects</h2>
-          <div class="work__boxes">
-            <!-- Each div with the work__box class is a project. -->
-<!-- 
-            <div class="work__box">
-              <div class="work__text">
-                <h3>Flux</h3>
-
-                <p>
-                  2.5D Puzzle Platformer with magnetism as the core gameplay
-                  mechanic.
-                </p>
-                <p>
-                  The project began as a sandbox to develop an understanding on
-                  Character Controllers using Unity and C#. To expand on the
-                  project I began experimenting with differnet ways to implement
-                  Magnetism.
-                </p>
-                <p>
-                  I plan to refine the mechanics, improve animations and
-                  implement puzzles that utilize these features.
-                </p>
-
-                <div class="work__links">
-                  <a
-                    href="https://github.com/seniorbush/Flux"
-                    target="_blank"
-                    class="link__text"
-                    >GitHub Repository <span>&rarr;</span>
-                  </a>
-                </div>
-              </div>
-              <div class="work__image-box">
-                <iframe
-                  width="450"
-                  height="300"
-                  src="https://www.youtube.com/embed/0s6EwNUXbPc?mute=1"
-                  frameborder="0"
-                  allowfullscreen
-                > -->
-                <!-- <iframe
-                  width="450"
-                  height="300"
-                  src="https://www.youtube.com/embed/OfCLPeStelU?mute=1"
-                  frameborder="0"
-                  allowfullscreen
-                >
-                <iframe
-                  width="450"
-                  height="300"
-                  src="https://www.youtube.com/embed/aValSXw7Z-Q?mute=1"
-                  frameborder="0"
-                  allowfullscreen
-                > -->
-                <!-- </iframe>
-                <img
-                  width="450"
-                  src="./images/flux_movement_controller.png"
-                  alt="img"
-                />
-                <iframe
-                  width="450"
-                  height="300"
-                  src="https://www.youtube.com/embed/tgrZ84JF7P8?mute=1"
-                  frameborder="0"
-                  allowfullscreen
-                >
-                </iframe>
-                <img
-                  width="450"
-                  src="./images/flux_magnetism_controller.png"
-                  alt="img"
-                />
-              </div>
-            </div>
-
-            <div class="work__box">
-              <div class="work__text"> -->
-                <!-- <h3>UFO - Rail Shooter</h3>
-
-                <p>
-                  3D Rail Shooter.
-                </p>
-                <p>
-                  Based on a tutorial from GameDev.tv, this project gave me the chance
-                  to experiment and implement a variety of Unity features, spent time with particle effects for explosions and ships lasers, 
-                  made use of the terrain tools to scuplt the environment, paint textures and add trees etc.  
-                  Used the timeline to add positional animations for the enemy ships and objects.
-                  The player controller for this game was more specific to flight, having to take into considersation the pitch, yaw and roll of the players ship.
-                </p>
-                <p>
-                  Thoroughly enjoyed this project, learned many more features within Unity and wrote numerous different scripts for the game.
-                </p>
-
-                <div class="work__links">
-                  <a
-                    href="https://github.com/seniorbush/Scripts"
-                    target="_blank"
-                    class="link__text"
-                    >GitHub Repository <span>&rarr;</span>
-                  </a>
-                </div>
-              </div>
-              <div class="work__image-box">
-                <iframe
-                  width="450"
-                  height="300"
-                  src="https://www.youtube.com/embed/VJS0kSuaICI?mute=1"
-                  frameborder="0"
-                  allowfullscreen
-                >
-                </iframe>
-                <img
-                  width="450"
-                  src="./images/ufo_collision.png"
-                  alt="img"
-                />
-                <img
-                  width="450"
-                  src="./images/ufo_enemy.png"
-                  alt="img"
-                />
-                <img
-                  width="450"
-                  src="./images/ufo_score.png"
-                  alt="img"
-                />
-              </div>
-            </div>
-
-            <div class="work__box">
-              <div class="work__text">
-                <h3>Other</h3>
-
-                <p>
-                  Experimenting with static terrain and procedural generation.
-                </p>
-                <p>
-                  Voxel-based procedural generation in Unity using C# has been a exciting journey so far, 
-                  still in the process of fully mastering these tools but I'm beginning to grasp the principles 
-                  of voxel representation and procedural generation algorithms. 
-                  <p>
-                  I have enjoyed experimenting with C# and the Unity environment to manipulate voxels and create dynamic virtual environments.  
-                  Really fascinated with this style of map creation and will continue learning and exploring until I find a suitable method for my open world game.
-                  </p> 
-                </p>
-                <p>
-                  Also continuing to practice static terrain building using Unity's terrain tools and various imported assets.
-                </p>
-
-                
-              </div>
-              <div class="work__image-box">
-                <iframe
-                  width="450"
-                  height="300"
-                  src="https://www.youtube.com/embed/a81abcCuouo?mute=1"
-                  frameborder="0"
-                  allowfullscreen
-                >
-                </iframe>
-                <iframe
-                  width="450"
-                  height="300"
-                  src="https://www.youtube.com/embed/vi_CwSXtL8k?mute=1"
-                  frameborder="0"
-                  allowfullscreen
-                >
-                </iframe>
-                <iframe
-                  width="450"
-                  height="300"
-                  src="https://www.youtube.com/embed/613JrMRTc40?mute=1"
-                  frameborder="0"
-                  allowfullscreen
-                >
-                </iframe>
-                <img -->
-                  <!-- width="450"
-                  src="./images/voxel.png"
-                  alt="img"
-                />
-                <img
-                  width="450"
-                  src="./images/voxel2.png"
-                  alt="img"
-                />
-              </div>
-            </div>
-            <div class="work__box">
-              <div class="work__text">
-                <h3>Game Design</h3>
-                <p>
-                  In the planning stages of my passion project I have created a Game Design Document.
-                  <p>This document, accessible through the link below, is a focus on the nuanced details of the gameplay mechanics, 
-                    thoughtful design considerations and strategic planning invested in every aspect of the gaming experience.
-                    </p>
-                    <a
-                  href="https://drive.google.com/file/d/1VN3lb23-2Dt-LoW65GxVBpz_ql59DTfK/view?usp=sharing"
-                  title="View Source Code"
-                  target="_blank"
-                  ><img src="./images/documents-folder-svgrepo-com (1).svg" class="work__code" alt="GitHub"
-                /></a>
-                </p> 
-                
-              </div>
-
-              <div class="work__image-box">  
-                <img
-                  width="450"
-                  src="./images/BING STUDIO.png"
-                  alt="img"
-                />
-                <img
-                  width="450"
-                  src="./images/Warden - Gameplay Loop(NTP).png"
-                  alt="img"
-                />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> -->
-    </main>
-
-    <!-- ***** Footer ***** -->
-
-    <a href="#top" class="back-to-top" title="Back to Top">
-      <img
-        src="./images/arrow-up.svg"
-        alt="Back to Top"
-        class="back-to-top__image"
-      />
-    </a>
-    <script src="./index.js"></script>
+    <!-- Unity Asset Store Icon Link
+    <a
+      class="icon-link"
+      href="https://assetstore.unity.com/publishers/####"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      Unity Asset Store
+    </a> -->
   </body>
 </html>
-
-
-
-<!--  -->
