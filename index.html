@@ -1,90 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" type="image/png" href="./images/favicon.png" />
-    <title>PM Applications</title>
-
-    <!-- Fonts -->
-    <link
-      href="https://db.onlinewebfonts.com/c/b9afe60e42f08c79f5333c87ed334402?family=Blackout+Midnight+V1"
-      rel="stylesheet"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
-      rel="stylesheet"
-    />
-
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        background: #111;
-        color: #fff;
-        font-family: 'Poppins', sans-serif;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 100vh;
-        flex-direction: column;
-        text-align: center;
-      }
-
-      h1 {
-        font-family: "Blackout Midnight V1", sans-serif;
-        font-size: 84px;
-        margin: 0;
-        letter-spacing: 2px;
-      }
-
-      h2 {
-        font-size: 24px;
-        font-weight: 300;
-        margin-top: 10px;
-        color: #ccc;
-      }
-
-      a {
-        margin-top: 20px;
-        color: #08fdd8;
-        font-size: 18px;
-        text-decoration: none;
-      }
-
-      a:hover {
-        text-decoration: underline;
-      }
-
-      .icon-link {
-        display: inline-flex;
-        align-items: center;
-        margin-top: 10px;
-        gap: 8px;
-        font-size: 16px;
-      }
-
-      .icon-link img {
-        width: 24px;
-        height: 24px;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>PM Applications</h1>
-    <h2>Coming soon</h2>
-    <a href="mailto:contact.pmapps@gmail.com">contact.pmapps@gmail.com</a>
-
-    <!-- Unity Asset Store Icon Link
-    <a
-      class="icon-link"
-      href="https://assetstore.unity.com/publishers/####"
-      target="_blank"
-      rel="noopener noreferrer"
-    >
-      Unity Asset Store
-    </a> -->
-  </body>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PM Applications</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="index.css" />
+</head>
+<body>
+  <div class="layout">
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-header">
+        <img src="images/pmlogo.png" alt="PM Applications Logo" class="sidebar-logo invert-logo" />
+      </div>
+      <nav class="sidebar-nav">
+        <ul class="nav-list">
+          <li><a href="#" data-section="home" class="nav-link active">Home</a></li>
+          <li><a href="#" data-section="products" class="nav-link">Products</a></li>
+          <li>
+            <button class="nav-link docs-toggle collapsible" id="docsToggle" aria-expanded="false">
+              Documentation
+              <span class="arrow">▸</span>
+            </button>
+            <ul class="docs-subnav collapsible-content">
+              <li>
+                <button class="doc-link collapsible" data-doc="buggie" aria-expanded="false">
+                  <span>Buggie</span>
+                  <span class="arrow">▸</span>
+                </button>
+                <ul class="doc-chapters-subnav collapsible-content">
+                  <li>
+                    <button class="doc-chapter-link" data-doc="buggie" data-chapter="overview">
+                      Overview
+                    </button>
+                  </li>
+                  <li>
+                    <button class="doc-chapter-link" data-doc="buggie" data-chapter="package-installation">
+                      Package Installation
+                    </button>
+                  </li>
+                  <li>
+                    <button class="doc-chapter-link" data-doc="buggie" data-chapter="navigation">
+                      Navigation
+                    </button>
+                  </li>
+                  <li>
+                    <button class="doc-chapter-link" data-doc="buggie" data-chapter="adding-bugs-tasks">
+                      Adding New Bugs/Tasks
+                    </button>
+                  </li>
+                  <li>
+                    <button class="doc-chapter-link" data-doc="buggie" data-chapter="using-shortcuts">
+                      Using Shortcuts
+                    </button>
+                  </li>
+                  <li>
+                    <button class="doc-chapter-link" data-doc="buggie" data-chapter="customisation">
+                      Customisation
+                    </button>
+                  </li>
+                  <li>
+                    <button class="doc-chapter-link" data-doc="buggie" data-chapter="exporting-data">
+                      Exporting Data
+                    </button>
+                  </li>
+                  <li>
+                    <button class="doc-chapter-link" data-doc="buggie" data-chapter="final">
+                      Final Notes & Support
+                    </button>
+                  </li>
+                  <li>
+                    <button class="doc-chapter-link" data-doc="buggie" data-chapter="legal">
+                      Legal & Usage
+                    </button>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li><a href="#" data-section="contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="sidebar-hamburger" id="sidebarToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+    </aside>
+    <main class="content" id="main-content"></main>
+  </div>
+  <script src="index.js"></script>
+</body>
 </html>
