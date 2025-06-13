@@ -11,7 +11,7 @@
   <div class="layout">
     <aside class="sidebar" id="sidebar">
       <div class="sidebar-header">
-        <img src="images/pmlogo.png" alt="PM Applications Logo" class="sidebar-logo invert-logo" />
+<img src="images/pmlogo.png" alt="PM Applications Logo" class="sidebar-logo invert-logo" />
       </div>
       <nav class="sidebar-nav">
         <ul class="nav-list">
@@ -46,7 +46,7 @@
                   </li>
                   <li>
                     <button class="doc-chapter-link" data-doc="buggie" data-chapter="adding-bugs-tasks">
-                      Adding New Bugs/Tasks
+                      Adding New Bugs & Tasks
                     </button>
                   </li>
                   <li>
@@ -88,5 +88,14 @@
     <main class="content" id="main-content"></main>
   </div>
   <script src="index.js"></script>
+
+  <script>
+    // Mobile sidebar toggle logic
+    const sidebarToggle = document.getElementById("sidebarToggle");
+    const sidebar = document.getElementById("sidebar");
+    sidebarToggle?.addEventListener("click", () => {
+      sidebar?.classList.toggle("open");
+    });
+  </script>
 </body>
 </html>

@@ -18,99 +18,99 @@ const docsCards = [
     title: 'Buggie',
     chapters: {
       "overview": {
-        title: "Overview",
+        title: "overview",
         content: `
           <img src="images/bug_icon_logo_newbanner-nobg.png" alt="Buggie Logo" class="header-img" style="max-width:640px; margin-bottom:20px;">
           <div style="font-weight:700; font-size:1.18rem; margin-bottom:8px;">BUG TRACKER   |   TASK MANAGER</div>
-          <div style="font-weight:600; font-size:1.09rem; margin-bottom:12px;">User Manual</div>
+          <br><br>
           <p>Buggie is a customizable bug and task tracking tool built inside the Unity Editor. It is designed for developers to quickly record and manage tasks and issues directly within Unity, without interrupting workflow. This asset was developed utilising Odin Inspector therefore, it is a dependency in order for this tool to function.</p>
         `
       },
       "package-installation": {
-        title: "Package Installation",
+        title: "package installation",
         content: `<p>Follow the standard Unity procedure and install the Buggie asset from the Package Manager/My Assets.</p>`
       },
       "navigation": {
-        title: "Navigation",
+        title: "navigation",
         content: `
           <h3>Navigating to the Main Window</h3>
-          <p>Once the package is installed, a Buggie tab will appear in the Unity Editor’s Taskbar menu. Select ‘Open Main Window’ from the dropdown.</p>
+          <p>Once the package is installed, a Buggie tab will appear in the Unity Editor’s Taskbar menu. Select Tools/Buggie/‘Open Main Window’ from the dropdown.</p>
           <img class="doc-img" src="images/buggie_1.png" alt="Navigating to Main Window" />
           <img class="doc-img" src="images/buggie_2.png" alt="Navigating to Main Window 2" />
-          <h3>Using the Tab Selection</h3>
+          <h3>using the tab selection</h3>
           <p>Click the Bugs tab to display the current bug list. Click the Tasks tab to display your task list. Click the Settings tab to adjust formatting and colour options.</p>
           <img class="doc-img" src="images/buggie_3.png" alt="Using Tab Selection" />
         `
       },
       "adding-bugs-tasks": {
-        title: "Adding New Bugs/Tasks",
+        title: "adding new bugs &tasks",
         content: `
-          <h3>Adding a New Bug</h3>
+          <h3>adding a new bug</h3>
           <p>Create new Bugs from the Main Window. Interacting with the relevant add button will result in a modal popup. Here you can choose the category, priority and description of your bug.</p>
           <img class="doc-img" src="images/buggie_4.png" alt="Adding a New Bug 1" />
           <p>And add references to any related scripts, game objects or assets.</p>
           <img class="doc-img" src="images/buggie_5.png" alt="Adding a New Bug 2" />
           <img class="doc-img" src="images/buggie_6.png" alt="Adding a New Bug 3" />
-          <h3>Adding a New Task</h3>
+          <h3>adding a new task</h3>
           <p>The same process applies to creating tasks as it does to bugs. You will be presented with a modal popup, this time, the Task Modal. A Task allows you to create an additional checklist to add more structure over your Task and what it will take to complete it.</p>
           <img class="doc-img" src="images/buggie_7.png" alt="Adding a New Task" />
-          <h3>Filtering</h3>
+          <h3>filtering</h3>
           <p>Quickly locate relevant bugs and tasks by applying filters for Category, Priority, and Status. Active filters appear above the table and can be cleared individually or all at once with a single click.</p>
           <img class="doc-img" src="images/buggie_8.png" alt="Filtering" />
-          <h3>Completion/Deletion</h3>
+          <h3>completion / deletion</h3>
           <p>Use the checkmark icon to mark bugs or tasks as complete, automatically moving them to the bottom of the list and logging completion time. Use the X icon to safely remove entries—confirmation prompts prevent accidental deletion.</p>
           <img class="doc-img" src="images/buggie_9.png" alt="Completion/Deletion" />
-          <h3>Detailed View</h3>
+          <h3>detailed view</h3>
           <p>Open a full-screen, dock-able detail window for any bug or task. These windows let you edit fields like category, priority, description, and linked assets. You can also complete or delete entries directly from this view, with all changes syncing back to the main list.</p>
           <img class="doc-img" src="images/buggie_10.png" alt="Detailed View" />
-          <h3>Click the eye icon to open a detailed view</h3>
+          <h3>click the eye icon to open a detailed view</h3>
           <img class="doc-img" src="images/buggie_11.png" alt="Detailed View Icon" />
           <img class="doc-img" src="images/buggie_12.png" alt="Detailed View Icon 2" />
         `
       },
       "using-shortcuts": {
-        title: "Using Shortcuts",
+        title: "using shortcuts",
         content: `
-          <h3>Default Shortcuts</h3>
+          <h3>default shortcuts</h3>
           <p>Speed up your workflow with keyboard shortcuts. All shortcuts work globally inside the Unity Editor—even if the main window is closed. Out of the box, Buggie ships with default shortcut input:</p>
           <ul>
             <li><b>Ctrl + Shift + Alt + B</b> = Add Bug</li>
             <li><b>Ctrl + Shift + Alt + T</b> = Add Task</li>
           </ul>
           <img class="doc-img" src="images/buggie_13.png" alt="Default Shortcuts" />
-          <h3>Custom Shortcuts</h3>
+          <h3>custom shortcuts</h3>
           <p>Navigate to the settings tab to find quick access to choosing custom shortcuts. This is handled via Unity’s built in shortcut solution.</p>
           <img class="doc-img" src="images/buggie_14.png" alt="Custom Shortcuts 1" />
           <img class="doc-img" src="images/buggie_15.png" alt="Custom Shortcuts 2" />
         `
       },
       "customisation": {
-        title: "Customisation",
+        title: "customisation",
         content: `
-          <h3>Changing Colours</h3>
+          <h3>changing colours</h3>
           <p>From the Settings tab, customize the accent colours used across bugs, tasks and completion status. All visual elements update live to reflect your chosen palette (Detailed View Modal Windows may require saving settings before updating). This includes button tints, text labels, and icon highlights.</p>
           <img class="doc-img" src="images/buggie_16.png" alt="Changing Colours" />
-          <h3>Formatting Date</h3>
+          <h3>formatting date</h3>
           <p>Choose how dates and times are displayed using standard C# datetime format strings. This lets you localize or personalize the timestamp layout across the app.</p>
           <img class="doc-img" src="images/buggie_17.png" alt="Formatting Date" />
-          <h3>Saving/Resetting</h3>
+          <h3>saving / resetting</h3>
           <p>Click Save Settings to persist your changes. You can also click Reset to revert to the original factory settings. Both options are clearly available at the bottom of the Settings tab.</p>
           <img class="doc-img" src="images/buggie_18.png" alt="Saving/Resetting" />
         `
       },
       "exporting-data": {
-        title: "Exporting Data",
+        title: "exporting data",
         content: `
-          <h3>Adding a New Bug</h3>
+          <h3>adding a new bug</h3>
           <p>From the Main Window, Export your entire bug or task list to a .csv file for use in external tools such as Excel, Sheets, or documentation pipelines.</p>
           <img class="doc-img" src="images/buggie_19.png" alt="Adding a New Bug Export" />
-          <h3>Setting Destination</h3>
+          <h3>setting destination</h3>
           <p>Choose your export destination using the standard Unity file save dialog. You can rename the file and place it anywhere within or outside your project directory. Note: Changing the date format in the settings tab will update the export filename accordingly.</p>
           <img class="doc-img" src="images/buggie_20.png" alt="Setting Destination" />
         `
       },
       "final": {
-        title: "Final Notes & Support",
+        title: "final notes & support",
         content: `
           <p>Buggie is designed to be fast, transparent, and easy to integrate into your workflow. If you encounter any issues, need help, or want to suggest a feature, please reach out through the Unity Asset Store support link.</p>
           <ul>
@@ -122,14 +122,14 @@ const docsCards = [
         `
       },
       "legal": {
-        title: "Legal & Usage",
+        title: "legal & usage",
         content: `
           <div class="legal-section">
-          <h3>Disclaimer:</h3>
+          <h3>disclaimer:</h3>
           <p>While every effort has been made to ensure reliability, the developer is not liable for any data loss, damages, or project issues resulting from use or misuse of this tool.</p>
-          <h3>Dependency Notice:</h3>
+          <h3>dependency notice:</h3>
           <p>This package requires Odin Inspector by Sirenix. It is a separate paid asset available on the Unity Asset Store. Buggie does not include Odin Inspector and does not modify or redistribute it in any way.</p>
-          <h3>License:</h3>
+          <h3>license:</h3>
           <p>Buggie is licensed for use in Unity projects under the terms of the Unity Asset Store EULA. You may modify and use it in personal or commercial projects. Redistribution or resale of the asset (modified or unmodified) outside the Asset Store is prohibited.</p>
           </div>
         `
@@ -155,11 +155,12 @@ const homeContent = `
 
 const productsContent = `
   <section>
-    <h2>Products</h2>
+    <h2>products</h2>
     <div class="centered-content-inner products">
       <table class="products-table">
         <thead>
           <tr>
+            <th></th>
             <th>Product</th>
             <th>Description</th>
             <th>Price</th>
@@ -168,15 +169,23 @@ const productsContent = `
         </thead>
         <tbody>
           <tr>
-            <td>Buggie</td>
-            <td>Customizable bug &amp; task tracker for Unity Editor.</td>
-            <td>£29.99</td>
             <td>
-              <a href="https://assetstore.unity.com/packages/slug/321158" target="_blank" class="assetstore-link" aria-label="Unity Asset Store">
+              <img 
+                src="images/buggie_productlogo.png" 
+                alt="Buggie Logo" 
+                class="product-thumb"
+              />
+            </td>
+            <td>Buggie</td>
+            <td>Customizable Bug &amp; Task Tracker for the Unity Editor.</td>
+            <td>£11.99</td>
+            <td>
+              <a href="https://assetstore.unity.com/packages/tools/buggie" target="_blank" class="assetstore-link" aria-label="Unity Asset Store">
                 Unity Asset Store
               </a>
             </td>
           </tr>
+          <!-- Add more products here as needed, each with an image in the first <td> -->
         </tbody>
       </table>
     </div>
@@ -185,7 +194,7 @@ const productsContent = `
 
 const contactContent = `
   <section>
-    <h2>Contact</h2>
+    <h2>contact</h2>
     <div class="centered-content-inner contact">
       <div class="contact-row">
         <div class="contact-col">
